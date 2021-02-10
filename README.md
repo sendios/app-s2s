@@ -16,16 +16,18 @@ body:
 
 description:
 
-1) **user_id** - id of user on your side
-2) **project_id** - id of project on our side
-3) **type_id** - id of type on our side
-4) **key** - unique key of happened event (we will expect it from you on receive event request)
+1) **user_id** - external id of user
+2) **project_id** - internal id of project, we provide it to you
+3) **type_id** - internal id of type, we provide it to you
+4) **key** - unique key of happened event (we are expecting it from you on receiving event request)
 
 # 2) Receive Event
 
-**POST** https://app-push.mailfire.io/api/v1/client-app-push/event <br>
+**POST** https://app-push.sendios.io/api/v1/client/event <br>
+
 header:
 ```Authorization: API_KEY```<br>
+
 body:
 
 ```json
@@ -37,15 +39,29 @@ body:
 
 description:
 
-1) **API_KEY** - we are providing it to you
+1) **API_KEY** - we provide it to you
 2) **key** - unique key of happened event (we send it to you on the event requesting)
-3) **data** - object that contains info required for push (user data/links/etc.)
+3) **data** - object that contains info required for push <br>
+example:
+
+```json
+{
+  "project_title": <string>,
+  "users": [
+    {
+      "name" : <string>,
+      "age" : <int>
+    }
+  ]
+}
+```
 
 #Send Push (without Event)
 
-**POST** https://app-push.mailfire.io/api/v1/client-app-push <br>
-header:
-```Authorization: API_KEY```<br>
+**POST** https://app-push.sendios.io/api/v1/client/push <br>
+
+header: ```Authorization: API_KEY```<br>
+
 body:
 
 ```json
@@ -63,4 +79,17 @@ description:
 2) **user_id** - id of user on your side
 3) **project_id** - id of project on our side
 4) **type_id** - id of type on our side
-5) **data** - object that contains info required for push (user data/links/etc.)
+5) **data** - object that contains info required for push <br>
+example:
+
+```json
+{
+  "project_title": <string>,
+  "users": [
+    {
+      "name" : <string>,
+      "age" : <int>
+    }
+  ]
+}
+```
