@@ -75,10 +75,10 @@ body:
 
 description:
 
-1) **API_KEY** - we are providing it to you
-2) **user_id** - id of user on your side
-3) **project_id** - id of project on our side
-4) **type_id** - id of type on our side
+1) **API_KEY** - we provide it to you
+2) **user_id** - external id of user
+3) **project_id** - internal id of project, we provide it to you
+4) **type_id** - internal id of type, we provide it to you
 5) **data** - object that contains info required for push <br>
 example:
 
