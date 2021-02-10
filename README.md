@@ -56,7 +56,7 @@ example:
 }
 ```
 
-#Send Push (without Event)
+# Send Push (without Event)
 
 **POST** https://app-push.sendios.io/api/v1/client/push <br>
 
