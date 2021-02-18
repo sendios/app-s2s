@@ -26,7 +26,7 @@ description:
 **POST** https://app-push.sendios.io/api/v1/client/event <br>
 
 header:
-```Authorization: API_KEY```<br>
+```Authorization: Basic API_KEY```<br>
 
 body:
 
@@ -60,7 +60,7 @@ example:
 
 **POST** https://app-push.sendios.io/api/v1/client/push <br>
 
-header: ```Authorization: API_KEY```<br>
+header: ```Authorization: Basic API_KEY```<br>
 
 body:
 
