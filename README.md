@@ -16,7 +16,7 @@ body:
 
 description:
 
-1) **user_id** - external id of user
+1) **client_user_id** - external id of user
 2) **project_id** - internal id of project, we provide it to you
 3) **type_id** - internal id of type, we provide it to you
 4) **key** - unique key of happened event (we are expecting it from you on receiving event request)
@@ -76,7 +76,7 @@ body:
 description:
 
 1) **API_KEY** - we provide it to you
-2) **user_id** - external id of user
+2) **client_user_id** - external id of user
 3) **project_id** - internal id of project, we provide it to you
 4) **type_id** - internal id of type, we provide it to you
 5) **data** - object that contains info required for push <br>
