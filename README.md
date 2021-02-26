@@ -7,7 +7,7 @@ body:
 
 ```json
 {
-  "user_id": <integer>,
+  "client_user_id": <integer>,
   "project_id": <integer>,
   "type_id": <integer>,
   "key": <string>
@@ -66,7 +66,7 @@ body:
 
 ```json
 {
-  "user_id": <int>,
+  "client_user_id": <int>,
   "project_id": <int>,
   "type_id": <int>,
   "data": <object>,
