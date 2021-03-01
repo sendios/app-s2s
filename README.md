@@ -7,7 +7,7 @@ body:
 
 ```json
 {
-  "client_user_id": <integer>,
+  "client_user_id": <string>,
   "project_id": <integer>,
   "type_id": <integer>,
   "key": <string>
@@ -47,6 +47,8 @@ example:
 ```json
 {
   "project_title": <string>,
+  "from_key": <string>,
+  "image": <string>,
   "users": [
     {
       "name" : <string>,
@@ -66,7 +68,7 @@ body:
 
 ```json
 {
-  "client_user_id": <int>,
+  "client_user_id": <string>,
   "project_id": <int>,
   "type_id": <int>,
   "data": <object>,
@@ -85,6 +87,8 @@ example:
 ```json
 {
   "project_title": <string>,
+  "from_key": <string>,
+  "image": <string>,
   "users": [
     {
       "name" : <string>,
