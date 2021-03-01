@@ -46,7 +46,6 @@ example:
 
 ```json
 {
-  "project_title": <string>,
   "from_key": <string>,
   "image": <string>,
   "users": [
@@ -86,7 +85,6 @@ example:
 
 ```json
 {
-  "project_title": <string>,
   "from_key": <string>,
   "image": <string>,
   "users": [
